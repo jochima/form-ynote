@@ -1,0 +1,193 @@
+@media (max-width: 600px) {
+    /* Centrer le bouton de thème et l'élargir */
+    .theme-toggle button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1em;
+    }
+
+    /* Réduire les marges internes du conteneur */
+    .content {
+        margin: 20px 15px;
+    }
+
+    /* Affichage vertical des champs */
+    .input {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Champs à 100% de la largeur */
+    .input input,
+    .input select {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    /* Légende plus petite */
+    legend {
+        font-size: 1.3em;
+    }
+
+    /* Bouton de soumission plus grand et lisible */
+    button#submit {
+        font-size: 1.1em;
+        padding: 14px;
+    }
+
+    /* Alerte plus compacte */
+    .alert {
+        font-size: 0.95rem;
+    }
+
+    /* Messages d’erreur en dessous des champs */
+    .error-message {
+        font-size: 0.85em;
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+}
+
+legend {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+fieldset{
+    padding: 20px;
+}
+
+button#submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#submit:hover {
+    background-color: #2980b9;
+}
+
+body.dark {
+    background: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.dark .content {
+    background: #2a2a2a;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+body.dark input,
+body.dark select {
+    background-color: #444;
+    color: #f0f0f0;
+    border: 1px solid #666;
+}
+
+body.dark button#submit {
+    background-color: #555;
+}
+
+body.dark button#submit:hover {
+    background-color: #777;
+}
+
+.theme-toggle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.theme-toggle button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.theme-toggle button:hover {
+    background-color: #555;
+}
+
+.content {
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input input,
+.input select {
+    flex: 1 1 48%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input select:only-child,
+.input input:only-child {
+    flex: 1 1 100%;
+}
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 4px;
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}

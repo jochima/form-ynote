@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULAIRE Y-NOTE</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body class="light">
+<div class="theme-toggle">
+    <button id="toggle-theme">Mode Nuit</button>
+</div>
+
+<section>
+    <div class="content">
+        <form action="{{ path('ynote_save') }}" method="post" id="ynote-form">
+            <input type="hidden" name="_token" value="{{ csrf_token }}">
+            <fieldset>
+                <legend>FORMULAIRE Y-NOTE</legend>
+                {% set success = app.flashes('success') %}
+                {% if success %}
+                    <div class="alert alert-success">
+                        <p><strong>Informations enregistrées :</strong></p>
+                        <ul>
+                            {% for field, value in success[0] %}
+                                <li><strong>{{ field|capitalize }} :</strong> {{ value }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+
+                {% set errors = app.flashes('error') %}
+                {% if errors %}
+                    <div class="alert alert-error">
+                        <p><strong>Erreur de validation</strong></p>
+                        <ul>
+                            {% for message in errors %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+
+                <div class="input">
+                    <input type="text" id="fname" name="fullname" placeholder="Nom complet"
+                           value="{{ oldFields.fullname ?? '' }}">
+                    <span class="error-message" id="fname-error"></span>
+                    <input type="email" id="email" name="email" placeholder="Email" value="{{ oldFields.email ?? '' }}">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="input">
+                    <input type="text" id="phone" name="phone" placeholder="phone" value="{{ oldFields.phone ?? '' }}">
+                    <span class="error-message" id="phone-error"></span>
+
+                    <input type="date" id="date" name="birth" placeholder="birth" value="{{ oldFields.birth ?? '' }}">
+                    <span class="error-message" id="date-error"></span>
+                </div>
+                <div class="input">
+                    <select class="" id="address" name="address">
+                        <option value="">Sélectionner une adresse</option>
+                        {% for feature in adresses['features'] %}
+                            <option value="{{ feature.properties.name }}">{{ feature.properties.name }}</option>
+                        {% endfor %}
+                        <option value=""></option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <button type="submit" id="submit">Soumettre</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</section>
+
+<script type="text/javascript" src="/scripts/validation.js"></script>
+<script type="text/javascript" src="/scripts/themes.js"></script>
+</body>
+</html>

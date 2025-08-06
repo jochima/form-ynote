@@ -38,4 +38,6 @@ ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 EXPOSE 9000
 
+EXPOSE 8000
+
 CMD ["php-fpm"]

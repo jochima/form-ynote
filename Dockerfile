@@ -31,6 +31,9 @@ COPY . .
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
 RUN chmod +x /usr/local/bin/entrypoint.sh
+    mkdir -p var/cache var/log && \
+    chown -R ynote:ynote /var/www && \
+    chmod -R 775 var
 
 USER ynote
 

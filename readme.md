@@ -39,7 +39,7 @@
 - Parametrage des plages horaire,
 - Chargement du theme adequate à partir de la mise en place ou de la substitution d'une classe
 
-### Problèmes rencontrés et/ou limites techniques 
+### Problèmes rencontrés et/ou limites techniques
 - Lors de la mise en place du style (thèmes),
 - Lors du réedimensionnement des éléments du formulaire en fonction de la taille d'écran,
 - Lors de l'écoute des évenements Javascript, dans le but d'initialiser le theme,
@@ -69,3 +69,7 @@
 - Exécuter à partir de la racine du projet : `docker build`
 - Démarrage du container : `docker compose up`
 - Ouvrir le lien généré dans un navigateur : `http//localhost:8000` (éventuellement)
+
+### Note
+- Après soumission du formulaire, les infomations soumis se charge dans un fichier data.json
+- Le fichier est disponible à partir du lien : http(s)://domain:port/data.json

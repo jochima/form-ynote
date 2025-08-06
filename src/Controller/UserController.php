@@ -77,7 +77,7 @@
             $this->addFlash('oldFields' , $request->request->all());
             return $this->redirectToRoute('ynote_form');
          }else{
-            $jsonPath = $this->getParameter('kernel.project_dir').'/var/data.json';
+            $jsonPath = $this->getParameter('kernel.project_dir').'/public/data.json';
             $jsonData = [];
 
             if(file_exists($jsonPath)){

@@ -54,7 +54,7 @@ class __TwigTemplate_fdac6a9f3c3a572480d7fbe8b33ca756 extends Template
 
 <section>
     <div class=\"content\">
-        <form action=\"";
+        <form action=\"https://form-ynote.onrender.com";
         // line 16
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ynote_save");
         yield "\" method=\"post\" id=\"ynote-form\">

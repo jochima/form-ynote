@@ -30,7 +30,7 @@
     }
 
     /* Bouton de soumission plus grand et lisible */
-    button#submit {
+    button#submit-btn {
         font-size: 1.1em;
         padding: 14px;
     }
@@ -78,7 +78,7 @@ fieldset{
     padding: 20px;
 }
 
-button#submit {
+button#submit-btn{
     width: 100%;
     padding: 12px;
     font-size: 1em;
@@ -89,7 +89,7 @@ button#submit {
     cursor: pointer;
 }
 
-button#submit:hover {
+button#submit-btn:hover {
     background-color: #2980b9;
 }
 
@@ -110,11 +110,11 @@ body.dark select {
     border: 1px solid #666;
 }
 
-body.dark button#submit {
+body.dark button#submit-btn {
     background-color: #555;
 }
 
-body.dark button#submit:hover {
+body.dark button#submit-btn:hover {
     background-color: #777;
 }
 

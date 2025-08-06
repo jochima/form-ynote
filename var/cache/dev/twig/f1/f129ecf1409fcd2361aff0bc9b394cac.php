@@ -339,6 +339,6 @@ class __TwigTemplate_e14fe6cffc52c87c811b9601172f3487 extends Template
         {% block body '' %}
     </body>
 </html>
-", "@WebProfiler/Profiler/base.html.twig", "/Users/joachimk/Sites/localhost/form-ynote/form-ynote/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/base.html.twig");
+", "@WebProfiler/Profiler/base.html.twig", "/Users/joachimk/Documents/GitHub/form-ynote/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/base.html.twig");
     }
 }

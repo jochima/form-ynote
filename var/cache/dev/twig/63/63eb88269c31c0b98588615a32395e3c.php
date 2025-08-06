@@ -181,6 +181,6 @@ class __TwigTemplate_b1d1132cbe04d39c41398082724690ac extends Template
 {% block panel %}
     {{ render(controller('web_profiler.controller.router::panelAction', { token: token })) }}
 {% endblock %}
-", "@WebProfiler/Collector/router.html.twig", "/Users/joachimk/Sites/localhost/form-ynote/form-ynote/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
+", "@WebProfiler/Collector/router.html.twig", "/Users/joachimk/Documents/GitHub/form-ynote/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
     }
 }

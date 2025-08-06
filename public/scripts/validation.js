@@ -13,9 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     birth: document.getElementById("date-error")
   };
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
+  function validateForm(form) {
     // Nettoyer les erreurs précédentes
     Object.values(errors).forEach(span => span.textContent = "");
     [fullname, email, phone, birth].forEach(input => input.classList.remove("error"));
@@ -59,6 +57,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!hasError) {
       form.submit();
     }
+  }
+
+  form.addEventListener("submit", (e) => {
+
+    e.preventDefault();
+    validateForm(form);
 
   });
 });

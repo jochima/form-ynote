@@ -16,7 +16,7 @@ if (!\class_exists(App_KernelProdContainer::class, false)) {
 
 return new \ContainerLtx8prw\App_KernelProdContainer([
     'container.build_hash' => 'Ltx8prw',
-    'container.build_id' => '2e150b22',
-    'container.build_time' => 1754505290,
+    'container.build_id' => '57f1a4ce',
+    'container.build_time' => 1754508362,
     'container.runtime_mode' => \in_array(\PHP_SAPI, ['cli', 'phpdbg', 'embed'], true) ? 'web=0' : 'web=1',
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerLtx8prw');

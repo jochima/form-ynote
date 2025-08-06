@@ -836,6 +836,6 @@ class __TwigTemplate_add392b8ea442b7f5812d855a509f6fd extends Template
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Collector/command.html.twig", "/Users/joachimk/Sites/localhost/form-ynote/form-ynote/vendor/symfony/web-profiler-bundle/Resources/views/Collector/command.html.twig");
+", "@WebProfiler/Collector/command.html.twig", "/Users/joachimk/Documents/GitHub/form-ynote/vendor/symfony/web-profiler-bundle/Resources/views/Collector/command.html.twig");
     }
 }

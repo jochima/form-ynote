@@ -63,7 +63,7 @@ class __TwigTemplate_f9fd08b150c71f24fe79f97e42070771 extends Template
         <form action=\"";
         // line 16
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ynote_save");
-        yield "\" method=\"post\" id=\"ynote-form\">
+        yield "\" method=\"post\" id=\"ynote-form\" name=\"ynote-form\">
             <input type=\"hidden\" name=\"_token\" value=\"";
         // line 17
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["csrf_token"]) || array_key_exists("csrf_token", $context) ? $context["csrf_token"] : (function () { throw new RuntimeError('Variable "csrf_token" does not exist.', 17, $this->source); })()), "html", null, true);
@@ -185,7 +185,7 @@ class __TwigTemplate_f9fd08b150c71f24fe79f97e42070771 extends Template
                 </div>
 
                 <div class=\"input\">
-                    <button type=\"submit\" id=\"submit\">Soumettre</button>
+                    <button type=\"submit\" id=\"submit-btn\" name=\"submit-btn\" >Soumettre</button>
                 </div>
             </fieldset>
         </form>
@@ -247,7 +247,7 @@ class __TwigTemplate_f9fd08b150c71f24fe79f97e42070771 extends Template
 
 <section>
     <div class=\"content\">
-        <form action=\"{{ path('ynote_save') }}\" method=\"post\" id=\"ynote-form\">
+        <form action=\"{{ path('ynote_save') }}\" method=\"post\" id=\"ynote-form\" name=\"ynote-form\">
             <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token }}\">
             <fieldset>
                 <legend>FORMULAIRE Y-NOTE</legend>
@@ -300,7 +300,7 @@ class __TwigTemplate_f9fd08b150c71f24fe79f97e42070771 extends Template
                 </div>
 
                 <div class=\"input\">
-                    <button type=\"submit\" id=\"submit\">Soumettre</button>
+                    <button type=\"submit\" id=\"submit-btn\" name=\"submit-btn\" >Soumettre</button>
                 </div>
             </fieldset>
         </form>
@@ -311,6 +311,6 @@ class __TwigTemplate_f9fd08b150c71f24fe79f97e42070771 extends Template
 <script type=\"text/javascript\" src=\"/scripts/themes.js\"></script>
 </body>
 </html>
-", "form/ynote.html.twig", "/Users/joachimk/Sites/localhost/form-ynote/form-ynote/templates/form/ynote.html.twig");
+", "form/ynote.html.twig", "/Users/joachimk/Documents/GitHub/form-ynote/templates/form/ynote.html.twig");
     }
 }

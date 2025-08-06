@@ -1943,6 +1943,6 @@ class __TwigTemplate_df0f751506876a2e20817893eb57105d extends Template
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/Users/joachimk/Sites/localhost/form-ynote/form-ynote/vendor/doctrine/doctrine-bundle/templates/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/Users/joachimk/Documents/GitHub/form-ynote/vendor/doctrine/doctrine-bundle/templates/Collector/db.html.twig");
     }
 }

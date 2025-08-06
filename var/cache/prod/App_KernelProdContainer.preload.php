@@ -603,3 +603,10 @@ $classes[] = 'Doctrine\\ORM\\Mapping\\ClassMetadata';
 $classes[] = 'Doctrine\\ORM\\Mapping\\FieldMapping';
 $classes[] = 'Doctrine\\ORM\\Id\\IdentityGenerator';
 $preloaded = Preloader::preload($classes, $preloaded);
+
+$classes = [];
+$classes[] = 'Symfony\\Component\\Routing\\Generator\\CompiledUrlGenerator';
+$classes[] = 'Symfony\\Bundle\\FrameworkBundle\\Routing\\RedirectableCompiledUrlMatcher';
+$classes[] = 'Symfony\\Component\\Validator\\Mapping\\ClassMetadata';
+$classes[] = 'Symfony\\Component\\Form\\Extension\\Validator\\Constraints\\Form';
+$preloaded = Preloader::preload($classes, $preloaded);

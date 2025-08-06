@@ -13,7 +13,7 @@
 
 <section>
     <div class="content">
-        <form action="https://form-ynote.onrender.com/{{ path('ynote_save') }}" method="post" id="ynote-form">
+        <form action="https://form-ynote.onrender.com{{ path('ynote_save') }}" method="post" id="ynote-form">
             <input type="hidden" name="_token" value="{{ csrf_token }}">
             <fieldset>
                 <legend>FORMULAIRE Y-NOTE</legend>
